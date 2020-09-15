@@ -29,7 +29,7 @@ Note: You will need node and npm installed on your local computer.
 - POSTMATES_SANDBOX_API_KEY={Your API Key}
 - POSTMATES_CUSTOMER_ID={Your customer ID}
 5. Run `npm start` to start up the server.
-6. Use [this](https://www.getpostman.com/collections/27a764402f1e37e97642) postman collection to test the routes since there is no frontend application built out yet.
+6. You can use [this](https://www.getpostman.com/collections/27a764402f1e37e97642) postman collection to test the routes since there is no frontend application built out yet.
 
 ## Notes
 - While I was reading the documentation I noticed that one of the links was leading to a 404 page: [https://blog.postmates.com/testing-the-postmates-api-with-postman/](https://blog.postmates.com/testing-the-postmates-api-with-postman/)
