@@ -35,10 +35,10 @@ Note: You will need node installed on your computer.
 - While I was reading the documentation I noticed that one of the links was leading to a 404 page: [https://blog.postmates.com/testing-the-postmates-api-with-postman/](https://blog.postmates.com/testing-the-postmates-api-with-postman/)
 
 ## Routes
-1. /create-delivery-quote
+### 1. /create-delivery-quote
 This route takes an order json payload with the pickup, drop off and contents data and returns delivery data with the quote id that can be used to create a delivery.
 
-### Example Order Body:
+#### Example Order Body:
 ```json
 {
   "uuid": "d69c3dc2-fa19-4686-a5d5-c07acc211b77",
@@ -66,7 +66,7 @@ This route takes an order json payload with the pickup, drop off and contents da
   ]
 }
 ```
-### Example Success Return Response:
+#### Example Success Return Response:
 ```json
 {
     "deliveryData": {
@@ -84,10 +84,10 @@ This route takes an order json payload with the pickup, drop off and contents da
 }
 ```
 
-2. /create-delivery
+### 2. /create-delivery
 This route takes an order json payload similar to the one used in the /create-delivery-quote route but with the addition of order id and manifest and returns delivery data that can be displayed to the customer to let them know their delivery details or any errors that might have occurred. 
 
-### Example Order Body:
+#### Example Order Body:
 ```json
 {
   "uuid": "d69c3dc2-fa19-4686-a5d5-c07acc211b77",
@@ -118,7 +118,7 @@ This route takes an order json payload similar to the one used in the /create-de
 }
 ```
 
-### Example Success Return Response:
+#### Example Success Return Response:
 ```json
 {
     "deliveryData": {
