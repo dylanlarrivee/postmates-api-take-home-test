@@ -21,10 +21,10 @@ Based on some recent food deliveries I have done I see this working something li
 4. This will return more information that can be passed along to the user by the frontend application to either let them know that the delivery was created successfully or that there was some sort of error.
 
 ## Running the code on your local machine
-Note: You will need node installed on your computer.
+Note: You will need node and npm installed on your local computer.
 1. Clone the repository to a local folder.
-2. Run `npm install`
-3. cd into the folder.
+2. cd into the postmates-api-take-home folder.
+3. Run `npm install`
 4. create a .env folder with your secret environment variables
 - POSTMATES_SANDBOX_API_KEY={Your API Key}
 - POSTMATES_CUSTOMER_ID={Your customer ID}
