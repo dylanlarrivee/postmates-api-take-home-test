@@ -9,9 +9,9 @@ The design of this system is quite open-ended, but this could be a HTTP server, 
 
 
 ## My Solution
-I decided to build a RESTful backend API using Node and Express that could take in order info and create a delivery by making a call to the Postmates API. This would allow a frontend application to retrieve data at different point of the checkout process that a customer is at.
+I decided to build a RESTful backend API using Node and Express that had two routes that could be used to take in order info and create a delivery by making calls to the Postmates API. The first call would be to retrieve the delivery quote based on the delivery items and dropoff/pickup location and the second is to use the delivery quote id retrieve from the first call and create the actual delivery. This would allow a frontend application to retrieve data at different points of the checkout process that a customer is at and can be used to create the delivery only if the delivery quote met certain criteria (delivery fee amount, delivery time etc..).
 
-I decided to do two separate routes instead of one all in one route because I have seen it handled that way in recent orders I have done where I was able to see the fees and delivery times before finalizing my order.
+I decided to do two separate routes instead of one all in one route because I have seen it handled that way in recent online orders I have placed where I was able to see the fees and delivery times before finalizing my order if those looked good to me.
 
 Based on some recent food deliveries I have done I see this working something like this:
 
